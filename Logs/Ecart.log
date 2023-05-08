@@ -1,0 +1,132 @@
+Start the db connection to insert values in vendor ratings table
+Error occurred 2: not all arguments converted during string formatting
+Exception on /app/v1/11/vendor_rating/insert [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/projects/E-cart/settings.py", line 54, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/projects/E-cart/app.py", line 19, in add_new_vendor_ratings_of_product
+    logger(__name__).warning("Start the db connection to insert values in vendor ratings table")
+  File "/home/bc2113451/Desktop/projects/E-cart/settings.py", line 30, in logger
+    if not any(isinstance(handler, logging.filehandler) for handler in logging.getLogger(name).handlers):
+  File "/home/bc2113451/Desktop/projects/E-cart/settings.py", line 30, in <genexpr>
+    if not any(isinstance(handler, logging.filehandler) for handler in logging.getLogger(name).handlers):
+AttributeError: module 'logging' has no attribute 'filehandler'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/projects/E-cart/settings.py", line 62, in wrapper
+    logger(__name__).error(f"Error occurred 2: {error}")
+  File "/home/bc2113451/Desktop/projects/E-cart/settings.py", line 30, in logger
+    if not any(isinstance(handler, logging.filehandler) for handler in logging.getLogger(name).handlers):
+  File "/home/bc2113451/Desktop/projects/E-cart/settings.py", line 30, in <genexpr>
+    if not any(isinstance(handler, logging.filehandler) for handler in logging.getLogger(name).handlers):
+AttributeError: module 'logging' has no attribute 'filehandler'
+Start the db connection to insert values in vendor ratings table
+Error occurred 2: not all arguments converted during string formatting
+Start the db connection to insert values in vendor ratings table
+Error occurred 1: null value in column "id" violates not-null constraint
+DETAIL:  Failing row contains (null, 101, 20, 3.0, Nice work, 2011-08-29 00:00:00, Thanks for the feedback, null).
+
+Start the db connection to insert values in vendor ratings table
+Error occurred 1: insert or update on table "vendor_ratings" violates foreign key constraint "vendor_ratings_vendor_id_fkey"
+DETAIL:  Key (vendor_id)=(101) is not present in table "vendor".
+
+Start the db connection to insert values in vendor table
+Error occurred 1: column "contact" of relation "vendor" does not exist
+LINE 1: INSERT INTO vendor (vendor_name, contact, address) VALUES('A...
+                                         ^
+
+Start the db connection to insert values in vendor table
+Error occurred 2: module 'logging' has no attribute 'filehandler'
+Start the db connection to insert values in vendor table
+Inserting value successful, hence closing the connection
+Start the db connection to insert values in vendor table
+Inserting value successful, hence closing the connection
+ERROR:2023-05-03 10:10:02,397:settings:Error occurred 2: update_vendor_details() got an unexpected keyword argument 'vendor_id'
+ERROR : 2023-05-03 10:15:27,755 : settings : Error occurred 2: update_vendor_details() got an unexpected keyword argument 'vendor_id'
+WARNING : 2023-05-03 10:16:09,712 : app : Start the db connection to update values in vendor table
+WARNING : 2023-05-03 10:16:09,866 : app : Updating value successful, hence closing the connection
+WARNING : 2023-05-03 10:28:30,023 : app : Start the db connection to insert values in vendor ratings table
+ERROR : 2023-05-03 10:28:30,184 : settings : Error occurred 1: insert or update on table "vendor_ratings" violates foreign key constraint "vendor_ratings_vendor_id_fkey"
+DETAIL:  Key (vendor_id)=(101) is not present in table "vendor".
+
+WARNING : 2023-05-03 10:28:36,503 : app : Start the db connection to insert values in vendor ratings table
+ERROR : 2023-05-03 10:28:36,665 : settings : Error occurred 1: insert or update on table "vendor_ratings" violates foreign key constraint "vendor_ratings_vendor_id_fkey"
+DETAIL:  Key (vendor_id)=(101) is not present in table "vendor".
+
+WARNING : 2023-05-03 10:28:49,799 : app : Start the db connection to insert values in vendor ratings table
+ERROR : 2023-05-03 10:28:50,102 : settings : Error occurred 1: insert or update on table "vendor_ratings" violates foreign key constraint "vendor_ratings_user_id_fkey"
+DETAIL:  Key (user_id)=(20) is not present in table "users".
+
+WARNING : 2023-05-03 10:33:50,935 : app : Start the db connection to insert values in vendor ratings table
+ERROR : 2023-05-03 10:33:51,119 : settings : Error occurred 1: insert or update on table "vendor_ratings" violates foreign key constraint "vendor_ratings_user_id_fkey"
+DETAIL:  Key (user_id)=(20) is not present in table "users".
+
+WARNING : 2023-05-03 10:34:03,059 : app : Start the db connection to insert values in vendor ratings table
+WARNING : 2023-05-03 10:34:03,180 : app : Inserting value successful, hence closing the connection
+WARNING : 2023-05-03 10:34:49,197 : app : Start the db connection to insert values in vendor ratings table
+WARNING : 2023-05-03 10:34:49,407 : app : Inserting value successful, hence closing the connection
+WARNING : 2023-05-03 10:37:18,817 : app : Starting the db connection to get ratings of vendor id. 1
+INFO : 2023-05-03 10:37:18,920 : app : Ratings of vendor with id. 1 has been showed
+WARNING : 2023-05-03 10:37:18,920 : app : Hence checkout done, closing the connection
+WARNING : 2023-05-03 10:37:25,171 : app : Starting the db connection to get ratings of vendor id. 2
+INFO : 2023-05-03 10:37:25,280 : app : Ratings of vendor with id. 2 has been showed
+WARNING : 2023-05-03 10:37:25,280 : app : Hence checkout done, closing the connection
+WARNING : 2023-05-03 10:40:01,760 : app : Starting the db connection to get average ratings of vendor id. 2
+ERROR : 2023-05-03 10:40:01,942 : settings : Error occurred 1: column vendor.contact does not exist
+LINE 2:                     vendor.contact FROM vendor_ratings JOIN ...
+                            ^
+
+WARNING : 2023-05-03 10:40:18,343 : app : Starting the db connection to get average ratings of vendor id. 2
+ERROR : 2023-05-03 10:40:18,530 : settings : Error occurred 1: column reference "vendor_id" is ambiguous
+LINE 3: ...vendor.vendor_id = vendor_ratings.vendor_id WHERE vendor_id ...
+                                                             ^
+
+WARNING : 2023-05-03 10:41:31,667 : app : Starting the db connection to get average ratings of vendor id. 2
+ERROR : 2023-05-03 10:41:31,851 : settings : Error occurred 1: column reference "vendor_id" is ambiguous
+LINE 3: ...vendor.vendor_id = vendor_ratings.vendor_id WHERE vendor_id ...
+                                                             ^
+
+WARNING : 2023-05-03 10:41:37,076 : app : Starting the db connection to get average ratings of vendor id. 2
+INFO : 2023-05-03 10:41:37,199 : app : Ratings of vendor with id. 2 has been showed
+WARNING : 2023-05-03 10:41:37,199 : app : Hence checkout done, closing the connection
+WARNING : 2023-05-03 10:53:50,154 : app : Starting the db connection to get average ratings of vendor id. 2
+ERROR : 2023-05-03 10:53:50,282 : settings : Error occurred 2: unsupported operand type(s) for //: 'tuple' and 'int'
+WARNING : 2023-05-03 10:55:55,524 : app : Starting the db connection to get average ratings of vendor id. 2
+INFO : 2023-05-03 10:55:55,649 : app : Ratings of vendor with id. 2 has been showed
+WARNING : 2023-05-03 10:55:55,650 : app : Hence checkout done, closing the connection
+ERROR : 2023-05-03 10:55:55,650 : settings : Error occurred 2: name 'get_details' is not defined
+WARNING : 2023-05-03 10:56:32,020 : app : Starting the db connection to get average ratings of vendor id. 2
+INFO : 2023-05-03 10:56:32,143 : app : Ratings of vendor with id. 2 has been showed
+WARNING : 2023-05-03 10:56:32,143 : app : Hence checkout done, closing the connection
+WARNING : 2023-05-03 11:39:39,873 : wishlist : Start the db connection to insert values in wishlist table
+ERROR : 2023-05-03 11:39:40,031 : settings : Error occurred 1: column "wishlist_id" of relation "vendor_ratings" does not exist
+LINE 1: INSERT INTO vendor_ratings (wishlist_id, user_id, product_id...
+                                    ^
+
+WARNING : 2023-05-03 11:39:47,838 : wishlist : Start the db connection to insert values in wishlist table
+WARNING : 2023-05-03 11:39:47,959 : wishlist : Inserting value successful, hence closing the connection
+WARNING : 2023-05-03 11:40:03,254 : wishlist : Start the db connection to insert values in wishlist table
+ERROR : 2023-05-03 11:40:03,417 : settings : Error occurred 1: insert or update on table "vendor_ratings" violates foreign key constraint "vendor_ratings_user_id_fkey"
+DETAIL:  Key (user_id)=(3) is not present in table "users".
+
+WARNING : 2023-05-03 11:40:10,128 : wishlist : Start the db connection to insert values in wishlist table
+WARNING : 2023-05-03 11:40:10,256 : wishlist : Inserting value successful, hence closing the connection
+WARNING : 2023-05-03 11:57:01,249 : wishlist : Start the db connection to insert values in wishlist table
+ERROR : 2023-05-03 11:57:01,345 : settings : Error occurred 2: 'NoneType' object is not subscriptable
+WARNING : 2023-05-03 12:00:03,940 : wishlist : Start the db connection to insert values in wishlist table
+ERROR : 2023-05-03 12:00:04,103 : settings : Error occurred 1: insert or update on table "wishlist" violates foreign key constraint "wishlist_product_id_fkey"
+DETAIL:  Key (product_id)=(10) is not present in table "products".
+
+WARNING : 2023-05-04 11:23:48,457 : vendor : Starting the db connection to get ratings of vendor id. 2
+INFO : 2023-05-04 11:23:48,573 : vendor : Ratings of vendor with id. 2 has been showed
+WARNING : 2023-05-04 11:23:48,573 : vendor : Hence ratings shown, closing the connection
