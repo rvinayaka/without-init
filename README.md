@@ -9,7 +9,7 @@ This project includes only wishlist, cart, orders, vendor ratings features
 Clone the project
 
 ```bash
-  git clone [https://link-to-project](https://github.com/rvinayaka/without-init.git)
+  git clone https://github.com/rvinayaka/without-init.git
 ```
 
 Go to the project directory
